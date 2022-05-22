@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <style>
+        .SignUpBtn{
+        background-color: green;
+        border: black;
+        color: white;
+        padding: 5px 24px;
+        margin-left: 250px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        cursor: pointer;
+        border-radius: 30px;
+      }
+      
+      input:focus{
+        border: 5px solid aqua;
+        
+      }
+      .resetBtn{
+        background-color: red;
+        border: black;
+        color: white;
+        padding: 5px 24px;
+        margin-left: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        cursor: pointer;
+        border-radius: 30px;
+      }
+      .resetBtn:hover {
+         background-color: yellow;
+         color: black;
+        }
+        
+        .SignUpBtn:hover{
+         background-color: blue;
+         color: white;
+        }
+        .SignUpDiv{
+        border: 5px outset aqua;
+        position: relative;
+        top: 20px;
+        width: 500px;
+        height: auto;
+        text-align: center;
+          background-color: white;
+          color: blue;
+          margin: auto;
+      }
+      .texts{
+        text-align: left;
+        margin-left: 20px;
+        font-size: 20px;
+      }
+      .genders{
+        color: black; 
+        margin-top: 0px;
+        text-align: left;
+        float: left;
+      }
+      .gender{
+        margin-top: 0px;
+        text-align: left;
+        float: left;
+        margin-left: 20px; 
+      }
+      .sport{
+        color: black; 
+        float: left; 
+        margin-left: 10px; 
+        margin-right: 10px; 
+        margin-top: 0px;
+      }
+      .sports{
+        color: black;
+        float: left;
+        margin-left: 20px;
+        margin-right: 10px;
+      }
+      .input_field{
+        width: 250px;
+        margin-left: 20px;
+      }
+      .error{
+        color: red;
+      }
+      
+        </style>
+    </head>
+    <body>
+        <div class="SignUpDiv">
+            <br>
+            <h1>SignUp</h1>
+            <form class="MyForm" id="myFormName">
+                <div>
+              <p class="texts">
+                Username<input id="name" class="input_field" style="display: inline;" type="text" placeholder="Enter Username"/></p>
+              <p class="error name_error"></p>
+
+              <p class="texts">
+                Email<input id="email" class="input_field" type="text" placeholder="Enter Email"/></p>
+              <p class="error email_error"></p>
+
+              <p class="texts">
+                Password<input id="password" class="input_field" type="password" placeholder="Enter Password"/></p>
+              <p class="error password_error"></p>
+
+              <p class="texts">Gender:</p>
+                    <input class="gender" type="radio" name="gender"/>
+                    <p class="genders">Male</p>
+
+                    <input class="gender" type="radio" name="gender"/>
+                    <p class="genders">Female</p>
+                    <p class="error gender_error"></p>
+                  <br>
+              <p class="texts">Sports:</p>
+                    <input class="sports" type="checkbox" name="sp1"/>
+                    <p class="sport">Tennis</p>
+
+                    <input class="sports" type="checkbox" name="sp2"/>
+                    <p class="sport">Running</p>
+
+                    <input class="sports" type="checkbox"name="sp3"/>
+                    <p class="sport">Football</p>
+                    <br>
+                    <p class="error sports_error"></p>
+                    <p class="texts">Country:
+                    <select style="width: 300px;">
+                      <option>Egypt</option>
+                      <option>Greece</option>
+                      <option>UK</option>
+                  </select></p>  
+            </div> 
+            <br>
+              <input class="SignUpBtn" type="submit" value="SignUp"/>
+              <input class="resetBtn" type="reset" value="Clear"/>
+              <br>
+            </form>
+        </div>
+        <script src="form.js"></script>
+    </body>
+</html>
